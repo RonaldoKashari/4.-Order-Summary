@@ -1,13 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
 body{
     background-color:hsl(225, 100%, 94%);
 }
 
 main {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+a{
+    padding: 15px;
+    float: right;
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+}
+
+a:hover{
+    text-decoration: none;
+    color:hsl(223, 47%, 23%);
+}
+
+h2{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+h4{
+    font-weight: 900;
 }
 
 .card {
@@ -16,14 +44,83 @@ main {
     background-color: hsl(0, 0%, 100%);
     border-radius: 15px;
     box-shadow: 2px 13px 19px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    width: 310px;
     justify-content: center;
-    align-items: center;
-    width: 250px;
-    padding: 20px;
-    gap: 15px;
+    align-content: center;
+    text-align: center;
+    overflow: hidden;
 }
 
 .heroImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.headerImage{
+    width: 100%;
+}
+
+.infoSection{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoSection p{
+    color:hsl(224, 23%, 55%)
+}
+
+.subPlans{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.iconPlan{
+    float: left;
+    display: flex;
+}
+
+.buttons{
+    width: 100%;
+}
+
+.paymentBtn{
+    width: 100%;
+    border-style: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-size: medium;
+    font-weight: 900;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.paymentBtn:hover{
+    cursor: pointer;
+    background-color: hsl(223, 47%, 23%);
+    box-shadow:  -4px 2px 18px -4px rgba(0,0,0,1);
+}
+
+.cancelBtn{
+    width: 100%;
+    border-style: none;
+    color: hsl(224, 23%, 55%);
+    background-color: white;
+    font-size: medium;
+    font-weight: 900;
+    padding: 10px;
+}
+
+.cancelBtn:hover{
+    cursor: pointer;
+    color: black;
 }
